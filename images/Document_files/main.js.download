@@ -1,0 +1,37 @@
+
+
+
+// let Q = prompt("What is your guess")
+// Q=Number.parseInt()
+// const num = Math.round(Math.random()*100)+1;
+// let score = 100
+// let chances = 0 
+
+
+
+// function guess_the_number(){
+//     alert ("Press ok to start the game ( Guess_The_Number )")
+// while(true){
+//     chances ++
+//     let user = parseInt(prompt("Enter your guess"))
+
+// if (user === num){
+//     alert("congratulatoins! Your score is " (score - chances))
+    
+//     break;
+// } else if (user > num){
+   
+//     alert("OOPS! you are wrong, try a smaller number")
+// } else {
+    
+//     alert("oops! you are wrong  try a greater number")
+// }}}
+
+// guess_the_number();
+
+
+
+
+
+
+
