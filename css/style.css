@@ -1,0 +1,551 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  width: 100%;
+  height: auto;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.hero-nav {
+  margin-left: 5em;
+  margin-right: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+  margin-top: 1em;
+  background-color: white;
+  position: sticky;
+  top: 5em;
+  z-index: 555;
+}
+
+.first-logo {
+  height: 80px;
+  width: 17.2em;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.first-logo svg {
+  width: 118px;
+  height: 64;
+}
+
+.center-nav {
+  height: 3rem;
+  display: flex;
+  border-radius: 2em;
+  box-shadow: 0px 3px 5px 0.2px rgba(211, 211, 211, 0.5);
+}
+.center-nav:hover {
+  box-shadow: 0px 3px 2px 0.2px rgba(211, 211, 211, 0.5);
+}
+
+.btn1 {
+  border-radius: 2rem 0 0 2rem;
+  padding: 0 0 0 0.5em;
+  color: #222222;
+  border: 1px solid lightgray;
+  border-right: none;
+  background-color: white;
+}
+.btn1:hover {
+  cursor: pointer;
+}
+.btn1 p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  border-right: 1px solid lightgray;
+}
+
+.btn2 {
+  color: #222222;
+  border: 1px solid lightgray;
+  border-left: none;
+  border-right: none;
+  background-color: white;
+}
+.btn2:hover {
+  cursor: pointer;
+}
+.btn2 p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  border-right: 1px solid lightgray;
+}
+
+.btn3 {
+  border-radius: 0 2rem 2rem 0;
+  display: flex;
+  align-items: center;
+  color: #717171;
+  border: 1px solid lightgray;
+  border-left: none;
+  background-color: white;
+}
+.btn3:hover {
+  cursor: pointer;
+}
+.btn3 p {
+  font-size: 0.9rem;
+  padding: 0 1rem;
+}
+.btn3 .search-icon {
+  background-color: #ff385c;
+  padding: 0.6em;
+  border-radius: 50%;
+  margin: 7px 7px 7px 0;
+}
+.btn3 svg {
+  transform: scale(0.9);
+  color: white;
+}
+.btn3 svg path {
+  fill: none;
+}
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+}
+.navigation-bar a {
+  font-size: 0.9rem;
+  color: #222222;
+  background-color: white;
+  text-decoration: none;
+  padding: 0.9rem;
+}
+.navigation-bar a:hover {
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 2em;
+}
+.navigation-bar .btn4 {
+  padding: 1.3em;
+  background-color: #ffffff;
+  border: none;
+}
+.navigation-bar .btn4:hover {
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.navigation-bar .btn5 {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding: 0.5em 0.5em 0.5em 0.9em;
+  border-radius: 2em;
+  background-color: #fff;
+  border: 1px solid rgba(211, 211, 211, 0.3);
+}
+.navigation-bar .btn5:hover {
+  box-shadow: 0px 3px 5px 0.2px rgba(211, 211, 211, 0.5);
+  cursor: pointer;
+}
+.navigation-bar .btn5 .svg2 {
+  padding-left: 1em;
+}
+
+.box-outer {
+  width: 77%;
+  height: 5em;
+  position: relative;
+}
+
+.arrow-left {
+  position: absolute;
+  width: 1.8em;
+  height: 1.8em;
+  top: 1.5em;
+  left: 0em;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+}
+.arrow-left:hover {
+  box-shadow: 0px 6px 5px 0.2px rgba(211, 211, 211, 0.5);
+  transform: scale(1.1);
+}
+
+.arrow-right {
+  position: absolute;
+  width: 1.8em;
+  height: 1.8em;
+  top: 1.5em;
+  right: 0.8em;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+}
+.arrow-right:hover {
+  box-shadow: 0px 6px 6px 0.2px rgba(211, 211, 211, 0.5);
+  transform: scale(1.1);
+}
+
+.box-inner {
+  width: 98%;
+  height: 5rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 2.6em;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 5em;
+  border-bottom: 2px solid transparent;
+}
+.thumb img {
+  width: 1.5em;
+  height: auto;
+  margin-bottom: 0.5em;
+  color: hsla(0, 0%, 44%, 0.274);
+}
+.thumb p {
+  font-size: 0.75rem;
+  color: #717171;
+}
+.thumb:hover {
+  border-bottom: 2px solid lightgray;
+  cursor: pointer;
+}
+.thumb:hover p {
+  color: #222222;
+}
+.thumb:first-child {
+  border-bottom: 2px solid black;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.btn6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  font-size: 0.75em;
+  color: #222222;
+  padding: 15px 17px;
+  background-color: white;
+  border-radius: 1em;
+  border: 1px solid rgba(211, 211, 211, 0.7);
+}
+
+.btn7 {
+  padding: 6px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  gap: 1em;
+  background-color: white;
+  border: 1px solid rgba(211, 211, 211, 0.7);
+  border-radius: 1em;
+}
+.btn7 svg {
+  color: #b0b0b0;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 27.5em;
+  gap: 1.2em;
+  margin-top: 5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 2em;
+  color: white;
+}
+
+.box-image {
+  width: 100%;
+  height: 20.5em;
+  background-image: url(../images/Cotia\,\ Brazil.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1em;
+  position: relative;
+}
+.box-image .heart {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+.box-image .heart path {
+  stroke: #fff;
+}
+.box-image .slider {
+  position: absolute;
+  width: 1.8em;
+  height: 1.8em;
+  top: 50%;
+  right: 0.8em;
+  z-index: 1;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+}
+.box-image .slider path {
+  stroke: #000;
+}
+.box-image:hover {
+  cursor: pointer;
+}
+
+.box-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+  color: black;
+}
+.box-title p {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.rating p {
+  font-weight: 400;
+}
+
+.box-info {
+  padding-top: 0.2em;
+}
+.box-info p {
+  color: #717171;
+  font-size: 0.95em;
+}
+
+.box-price {
+  padding-top: 0.5em;
+  font-weight: 500;
+  color: #717171;
+}
+
+.box2 .box-image {
+  background-image: url(../images/torino\,\ italy.webp);
+}
+
+.box3 .box-image {
+  background-image: url(../images/nantes\,\ france.webp);
+}
+
+.box4 .box-image {
+  background-image: url(../images/lyon\ france\ w.webp);
+}
+
+.box5 .box-image {
+  background-image: url(../images/milan\ italy.webp);
+}
+
+.box6 .box-image {
+  background-image: url(../images/london\ uk.webp);
+}
+
+.box7 .box-image {
+  background-image: url(../images/lyon\ france\ w.webp);
+}
+
+.box8 .box-image {
+  background-image: url(../images/palermo\ italy.webp);
+}
+
+.box9 .box-image {
+  background-image: url(../images/Madrid\ spain.webp);
+}
+
+.box10 .box-image {
+  background-image: url(../images/paris\ france.webp);
+}
+
+.box11 .box-image {
+  background-image: url(../images/kuta.webp);
+}
+
+.box12 .box-image {
+  background-image: url(../images/garopaba.webp);
+}
+
+.showmore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+  margin: 0 5em;
+  gap: 1em;
+}
+.showmore p {
+  font-size: 1.2em;
+  font-weight: 500;
+  word-spacing: 0.1em;
+}
+.showmore button {
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  padding: 1em 2em;
+  background-color: black;
+  border-radius: 1em;
+}
+
+.footpanel1 {
+  background-color: #f7f7f7;
+  padding: 3em 5em;
+  border-bottom: 1px solid #b0b0b0;
+}
+.footpanel1 h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+}
+.footpanel1 .footbtn1 {
+  border-bottom: 1px solid #b0b0b0;
+  display: flex;
+  align-items: end;
+}
+.footpanel1 button {
+  padding: 10px;
+  margin: 6px 6px 0px 10px;
+  font-size: 0.9rem;
+  background-color: #f7f7f7;
+  border: none;
+  cursor: pointer;
+}
+.footpanel1 button:first-child {
+  border-bottom: 1px solid black;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #f7f7f7;
+}
+
+.footgrid {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 2.25em;
+  gap: 1em;
+  cursor: pointer;
+}
+.footgrid p {
+  font-size: 0.75em;
+}
+
+.footpanel2 {
+  display: flex;
+  margin: 3rem 5em 0 5em;
+  padding-bottom: 2em;
+  justify-content: space-between;
+  color: #222222;
+  border-bottom: 1px solid #b0b0b0;
+}
+.footpanel2 h3 {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+.footpanel2 ul {
+  list-style: none;
+}
+.footpanel2 li {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+.footpanel2 li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footpanel3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 5em 1em 5em;
+}
+.footpanel3 .leftp {
+  color: #717171;
+  display: flex;
+}
+.footpanel3 .leftp a {
+  text-decoration: none;
+  color: #717171;
+}
+.footpanel3 .leftp a:hover {
+  text-decoration: underline;
+}
+.footpanel3 .leftp span {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+.footpanel3 .rightp {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.footpanel3 .rightp a {
+  text-decoration: none;
+}
+.footpanel3 .rightp a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
