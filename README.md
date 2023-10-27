@@ -3,7 +3,7 @@
 This project is my first attempt at cloning the Airbnb landing page as part of my web development learning journey.
 
 ## Live Demo
-Check out the [Live Demo](your-live-demo-link) to see the project in action.
+Check out the https://gharghashtkhan.github.io/Airbnb.com-Clone/ to see the project in action.
 
 ## Technologies Used
 - HTML5
@@ -13,10 +13,9 @@ Check out the [Live Demo](your-live-demo-link) to see the project in action.
 ## Features
 - Responsive design for various screen sizes.
 - Navigation bar with interactive elements.
-- [Add any other features you implemented]
 
 ## How to Run
-1. Clone the repository: `git clone your-repo-link`
+1. Clone the repository: https://github.com/GharghashtKhan/Airbnb.com-Clone.git
 2. Open `index.html` in your preferred browser.
 
 ## Feedback
